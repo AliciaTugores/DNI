@@ -1,6 +1,6 @@
 from src.tabla_asignación import tabla_asignacion
 
-class DNI:
+class letra_dni:
 
     length_numbers = 8
     length_dni = 9
@@ -9,7 +9,7 @@ class DNI:
         self.numbers = str(numbers)
 
     def validarDNI(self):
-        if len(self.numbers) != DNI.length_numbers:
+        if len(self.numbers) != letra_dni.length_numbers:
             return False
     
     def obtenerLetra(self):
@@ -28,7 +28,7 @@ class DNI:
         return self.numbers + self.obtenerLetra()
 
     def longitud_dni(self):
-        if len(self.DniConLetra()) == DNI.length_dni:
+        if len(self.DniConLetra()) == letra_dni.length_dni:
             return 'lo has lograo campeón'
         else:
             return 'prueba de nuevo'
